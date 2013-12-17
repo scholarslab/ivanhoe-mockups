@@ -1,0 +1,41 @@
+html {
+    background: #fffddd;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    margin: 0 auto;
+    width: 900px;
+    color: #444;
+}
+
+
+a:link {color: #700;}
+a:visited {color: #b00;}
+a:hover {color: #b00; text-decoration:none;}
+a:active {color: #500;}
+
+nav {
+    display:block;
+    border: 1px solid #ccc;
+    border-width: 1px 0;
+}
+
+nav a {
+    text-decoration:none;
+    color: #777;
+}
+
+nav ul {
+    list-style:none;
+    padding-left:0;
+}
+
+nav li {
+    display:inline;
+}
+
+nav li + li:before {
+    content: " · ";
+    color: #ccc;
+}
