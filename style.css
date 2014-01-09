@@ -17,6 +17,33 @@ a:active {color: #500;}
 
 input[type=text], label, textarea{display: block;}
 
+form {
+    background: rgba(0,0,0,0.1);
+    padding: 30px 5%;
+    border-radius: 10px;
+}
+
+label {
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+input[type=text], textarea {
+    width: 100%;
+    border-radius: 10px;
+    padding: 5px;
+    border: 1px solid black;
+    
+}
+
+textarea {
+    height: 100px
+}
+
+textarea{display: block;}
+
+
 nav {
     display:block;
     border: 1px solid #ccc;
