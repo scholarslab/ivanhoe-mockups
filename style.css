@@ -1,5 +1,10 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
 html {
-    background: #fffddd;
+    background: #f6f6f6;
 }
 
 body {
@@ -10,10 +15,10 @@ body {
 }
 
 
-a:link {color: #700;}
-a:visited {color: #b00;}
-a:hover {color: #b00; text-decoration:none;}
-a:active {color: #500;}
+a:link {color: #37c;}
+a:visited {color: #39c;}
+a:hover {color: #8c3; text-decoration:none;}
+a:active {color: #8a3;}
 
 input[type=text], label, textarea{display: block;}
 
@@ -49,11 +54,25 @@ textarea {
 
 textarea{display: block;}
 
+.eyebrow {
+    margin:0;
+    color: #777;
+    font-size: 90%;
+    font-weight:bold;
+}
+
+.eyebrow + * {
+    margin-top:0 !important;
+}
+
+header[role=banner] {
+}
 
 nav {
     display:block;
-    border: 1px solid #ccc;
-    border-width: 1px 0;
+    float:right;
+    text-align:right;
+    width: 60%;
 }
 
 nav a {
@@ -75,14 +94,96 @@ nav li + li:before {
     color: #ccc;
 }
 
+main {
+    clear:both;
+    overflow:hidden;
+    zoom:1;
+    padding: 2em;
+    background: rgba(255,255,255,0.9);
+}
+
+main :first-child {
+    margin-top:0;
+}
+
+article {
+    display:block;
+}
+article h2 {
+    font-size: 95%;
+}
+
 #game-metadata {
     float:right;
     width: 30%;
-    font-size: 90%;
+    font-size: 87.5%;
 }
+
+#game-metadata .description,
+#game-metadata .players {
+    background: rgba(0,100,200,0.1);
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+#make-move-button {
+    display:block;
+    text-align:center;
+    text-decoration:none;
+    background: rgba(0,100,200,0.9);
+    color: #fff;
+    padding: 1em 0;
+    font-size: 150%;
+    border-bottom: 20px solid white;
+    margin: 0 0 40px;
+}
+
 
 #moves {
     float:left;
-    width: 65%;
+    width: 68%;
 }
 
+.game {
+    overflow:hidden;
+    zoom:1;
+    clear:both;
+}
+
+.game + .game:before,
+.move + .move:before {
+    font-family: "Arial Unicode MS";
+    color: #999;
+    content: "❖ ❖ ❖ ❖ ❖";
+    text-align:center;
+    display:block;
+    clear:both;
+    margin: 2em 0;
+}
+.game h1,
+.game p {
+    float:left;
+    clear:left;
+    width: 48%;
+}
+
+.game h2,
+.game ul {
+    float:right;
+    clear:right;
+    width: 48%;
+}
+
+.game ul {
+    list-style:none;
+    margin-top:0;
+    font-size: 90%;
+}
+
+.move .meta {
+    font-size: 90%;
+    font-style:italic;
+    color: #999;
+    margin-top:0;
+    margin-bottom: 4em;
+}
