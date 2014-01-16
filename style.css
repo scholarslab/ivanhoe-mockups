@@ -74,3 +74,15 @@ nav li + li:before {
     content: " · ";
     color: #ccc;
 }
+
+#game-metadata {
+    float:right;
+    width: 30%;
+    font-size: 90%;
+}
+
+#moves {
+    float:left;
+    width: 65%;
+}
+
