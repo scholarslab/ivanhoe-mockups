@@ -29,9 +29,6 @@ img {
 }
 
 form {
-    background: rgba(0,0,0,0.1);
-    padding: 30px 5%;
-    border-radius: 10px;
 }
 
 label {
@@ -42,17 +39,26 @@ label {
 
 input[type=text], textarea {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 3px;
     padding: 5px;
-    border: 1px solid black;
+    border: 1px solid rgba(0,0,0,0.2);
     
 }
 
-textarea {
-    height: 100px
+.button img {
+    border-radius: 3px;
+    padding: 3px;
+    border: 1px solid rgba(0,0,0,0.2);
+    background: rgba(255,255,255,0.8);
+    cursor:pointer;
 }
 
-textarea{display: block;}
+textarea {
+    display: block;
+}
+
+textarea[name=content] {
+}
 
 .eyebrow {
     margin:0;
@@ -98,8 +104,9 @@ main {
     clear:both;
     overflow:hidden;
     zoom:1;
-    padding: 2em;
+    padding: 30px;
     background: rgba(255,255,255,0.9);
+    border-radius: 5px;
 }
 
 main :first-child {
@@ -134,8 +141,7 @@ article h2 {
     color: #fff;
     padding: 1em 0;
     font-size: 150%;
-    border-bottom: 20px solid white;
-    margin: 0 0 40px;
+    margin: 0 0 20px;
 }
 
 
@@ -187,3 +193,52 @@ article h2 {
     margin-top:0;
     margin-bottom: 4em;
 }
+
+#move-form {
+    background: rgba(0,0,0,0.1);
+    padding: 30px;
+    border-radius: 5px;
+    overflow:hidden;
+}
+
+#move-form form {
+    float:left;
+    width: 60%;
+}
+
+#move-form input,
+#move-form textarea {
+    margin-bottom: 2em;
+}
+
+#move-responding {
+    float:right;
+    width: 38%;
+}
+
+#move-responding ul {
+    list-style:none;
+    padding-left:0;
+    margin-left:0;
+    font-size: 90%;
+}
+
+#move-responding input {
+    margin:0 5px 0 0;
+}
+
+body > footer {
+    padding: 30px 0;
+    text-align:right;
+    font-size: 90%;
+}
+
+body > footer a {
+    text-decoration:none;
+}
+
+body > footer a + a:before {
+    content: " | ";
+    color: #bbb;
+}
+
