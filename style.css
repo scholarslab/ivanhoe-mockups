@@ -246,6 +246,22 @@ article h3 {
     margin:0 5px 0 0;
 }
 
+#responding {
+    float: left;
+    padding-top: 30px;
+    margin-left: auto;
+    text-align: left;
+    width: 50%;
+}
+
+#response {
+    float: right;
+    padding-top: 30px;
+    margin-right: auto;
+    text-align: left;
+    width: 50%;
+}
+
 body > footer {
     padding: 30px 0;
     text-align:right;

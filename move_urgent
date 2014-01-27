@@ -30,7 +30,17 @@
                 <img src="images/MtoH9-1.jpg">
             </article>
 
-        </div>
+        <div id="responding">
+                <h3><strong>Responding to...</strong></h3>
+                <ul>
+                <li><a href="move_telegram.html">The telegram...</a> <em>by</em> Mary Leigh | September 27, 2013</li>
+                <li><a href="move_discovery.html">The discovery that started it all...</a> <em>by</em> Mary Leigh | September 23, 2013</li>
+                </ul>
+            </div>
+            <div id="response">
+                <h3><strong>Responses:</strong></h3>
+                <p><em>None<em></p>
+            </div>
     </main>
 
 
