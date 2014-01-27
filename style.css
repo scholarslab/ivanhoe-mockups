@@ -120,6 +120,11 @@ article h2 {
     font-size: 95%;
 }
 
+article h3 {
+    font-size: 85%;
+    color: red;
+}
+
 #game-metadata {
     float:right;
     width: 30%;
@@ -188,6 +193,12 @@ article h2 {
     width: 48%;
 }
 
+.game h3 {
+    float: right;
+    clear: right;
+    width: 45%;
+    }
+    
 .game ul {
     list-style:none;
     margin-top:0;
